@@ -2,14 +2,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+	    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/hello_world"
-        tools:context=".HomeAcitivity" />
+		<LinearLayout
+		    android:id="@+id/musicmapparent"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="4"
+		    android:orientation="vertical" >
+			<RelativeLayout
+			    android:layout_width="match_parent"
+		    	android:layout_height="match_parent"
+		    	android:padding="20dip"
+		    	android:gravity="center_vertical"
+		    	android:id="@+id/musicmap">
+	        	<ImageButton
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:src="@drawable/ic_launcher"
+	        	    android:layout_alignParentLeft="true"
+	        	    android:layout_alignParentTop="true"
+	        	    android:id="@+id/songsmap"/>
+	        	<ImageButton
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:src="@drawable/ic_launcher"
+	        	    android:layout_alignParentRight="true"
+	        	    android:layout_alignParentTop="true"
+	        	    android:id="@+id/albumsmap"/>
+	        	<ImageButton
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:src="@drawable/ic_launcher"
+	        	    android:layout_alignParentLeft="true"
+	        	    android:layout_alignParentBottom="true"
+	        	    android:id="@+id/artistsmap"/>
+
+	        	<ImageButton
+	        	    android:id="@+id/genresmap"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_alignParentBottom="true"
+	        	    android:layout_alignRight="@+id/albumsmap"
+	        	    android:src="@drawable/ic_launcher" />
+
+        	</RelativeLayout>
+        	
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nowplaying"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+            
+	</LinearLayout>
+    
 
 </RelativeLayout>
