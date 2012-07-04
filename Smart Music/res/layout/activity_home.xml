@@ -26,29 +26,33 @@
 	        	    android:src="@drawable/ic_launcher"
 	        	    android:layout_alignParentLeft="true"
 	        	    android:layout_alignParentTop="true"
-	        	    android:id="@+id/songsmap"/>
+	        	    android:id="@+id/songsmap"
+	        	    android:tag="SONG_MAP_BUTTON"/>
 	        	<ImageButton
 	        	    android:layout_width="wrap_content"
 	        	    android:layout_height="wrap_content"
 	        	    android:src="@drawable/ic_launcher"
 	        	    android:layout_alignParentRight="true"
 	        	    android:layout_alignParentTop="true"
-	        	    android:id="@+id/albumsmap"/>
+	        	    android:id="@+id/albumsmap"
+	        	    android:tag="ALBUM_MAP_BUTTON"/>
 	        	<ImageButton
 	        	    android:layout_width="wrap_content"
 	        	    android:layout_height="wrap_content"
 	        	    android:src="@drawable/ic_launcher"
 	        	    android:layout_alignParentLeft="true"
 	        	    android:layout_alignParentBottom="true"
-	        	    android:id="@+id/artistsmap"/>
+	        	    android:id="@+id/artistsmap"
+	        	    android:tag="ARTIST_MAP_BUTTON"/>
 
 	        	<ImageButton
 	        	    android:id="@+id/genresmap"
 	        	    android:layout_width="wrap_content"
 	        	    android:layout_height="wrap_content"
 	        	    android:layout_alignParentBottom="true"
-	        	    android:layout_alignRight="@+id/albumsmap"
-	        	    android:src="@drawable/ic_launcher" />
+	        	    android:layout_alignParentRight="true"
+	        	    android:src="@drawable/ic_launcher" 
+	        	    android:tag="GENRE_MAP_BUTTON"/>
 
         	</RelativeLayout>
         	
